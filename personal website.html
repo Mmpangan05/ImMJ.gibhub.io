@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ's Personal Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-custom-green {
+            background-color: #d7f1e4; /* Light green background */
+        }
+        .text-custom-dark-green {
+            color: #0c3023; /* Dark green text */
+        }
+        .nav-link {
+            color: #0c3023; /* Dark green for nav links */
+            transition-color: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #087541; /* A brighter green on hover */
+        }
+        .button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+        }
+        .button:hover {
+            background-color: #367c39; /* Darker green on hover */
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white card */
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .section-title{
+             color: #0c3023;
+             font-size: 2rem;
+             font-weight: bold;
+             margin-bottom: 1rem;
+             text-align: center;
+        }
+
+    </style>
+</head>
+<body class="bg-custom-green">
+    <header class="bg-white/20 backdrop-blur-md py-4 px-6 rounded-b-lg shadow-md sticky top-0 z-10">
+        <nav class="container mx-auto flex items-center justify-center">
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="nav-link" style="padding: 0.5rem 1rem;">Home</a></li>
+                <li><a href="#about" class="nav-link" style="padding: 0.5rem 1rem;">About Me</a></li>
+                <li><a href="#interests" class="nav-link" style="padding: 0.5rem 1rem;">Interest</a></li>
+                <li><a href="#contact" class="nav-link" style="padding: 0.5rem 1rem;">Contacts/Socials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        <section id="home" class="text-center">
+            <h1 class="text-4xl font-semibold text-custom-dark-green mb-4">Hi I'm MJ, so pleased to see you!</h1>
+            <p class="text-lg text-custom-dark-green mb-2">I am currently studying in Eastern Visayas State University Carigara University</p>
+            <div class="flex justify-center my-4">
+                <img src= "https://upload.wikimedia.org/wikipedia/commons/c/c3/EVSU_Official_Logo.png"  alt="EVSU Logo" class="w-20 h-20 rounded-full border-2 border-green-700">
+                <img src= "iconforweb.png" alt="iconforweb" class="w-20 h-20 rounded-full border-2 border-green-700">
+            </div>
+            <p class="text-lg text-custom-dark-green mb-6">Feel free to check and roam around my little page!</p>
+            <a href="#about" class="button">More about me</a>
+            <p class="text-xs text-gray-500 mt-4">Note: This is for "Educational Purposes Only."</p>
+        </section>
+
+        <section id="about" class="py-10">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-custom-dark-green mb-4">Personal Info</h3>
+                    <ul class="list-disc list-inside text-lg text-custom-dark-green" ul style="text-align: center; list-style-position: inside;">
+                        <li>Name: Mariela Janel O. Pangan</li>
+                        <li>Birthday: January 31, 2006</li>
+                        <li>Star Sign: Aquarius</li>
+                        <li>Gender: Female</li>
+                        <li>Pronouns: She/Her</li>
+                    </ul>
+                     <div class="mt-6 flex justify-end">
+                        <a href="#about-education" class="button">Next</a>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="iconforweb.png" alt="iconforweb" style="width: 300px; height: 300px;">
+                </div>
+            </div>
+
+            <section id="about-education" class="mt-10">
+                <h3 class="text-2xl font-semibold text-custom-dark-green mb-4 text-center">Educational Background</h3>
+                <div class="card">
+                    <ul class="list-disc list-inside space-y-2 text-lg text-custom-dark-green" ul style="text-align: center; list-style-position: inside;">
+                        <li>Elementary: Tunga Central School (2012-2017)</li>
+                        <li>Junior High School: Gregorio C. Catenza National High School (2017-2022)</li>
+                        <li>Senior High School: Gregorio C. Catenza National High School (2022-2024)
+                            <ul class="list-disc list-inside ml-5 space-y-1">
+                                <li>Strand: Accountancy Business and Management (ABM)</li>
+                            </ul>
+                        </li>
+                        <li>College: Eastern Visayas State University (2024-Present)</li>
+                    </ul>
+                     <div class="mt-6 flex justify-end">
+                         <a href="#about-skills" class="button">Next</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-skills" class="mt-10">
+                <h3 class="text-2xl font-semibold text-custom-dark-green mb-4 text-center" >Skills</h3>
+                <div class="card">
+                    <ul class="list-disc list-inside space-y-2 text-lg text-custom-dark-green" ul style="text-align: center; list-style-position: inside;">
+                        <li>Digital Arts</li>
+                        <li>Graphics Design</li>
+                        <li>Collaboration</li>
+                        <li>Encoding</li>
+                    </ul>
+                     <div class="mt-6 flex justify-end">
+                        <a href="#interests" class="button">Next</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="interests" class="py-10">
+            <h2 class="section-title">Interests</h2>
+            <div class="card">
+                <ul class="list-disc list-inside space-y-2 text-lg text-custom-dark-green" ul style="text-align: center; list-style-position: inside;">
+                    <li>Dogs (especially Golden Retrievers and Samoyeds)</li>
+                    <li>Music</li>
+                    <li>Digital Arts</li>
+                    <li>Biblical Talk</li>
+                    <li>Drawing</li>
+                    <li>Cold Weathers</li>
+                </ul>
+                 <div class="mt-6 flex justify-end">
+                        <a href="#about-education" class="button">Next</a>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-10">
+            <h2 class="section-title">Contacts</h2>
+            <div class="card space-y-4">
+                <div class="flex items-center gap-4 text-lg text-custom-dark-green">
+                <span>Facebook:</span> <a href="https://www.facebook.com/jay.oledan.315" target="_blank" rel="noopener noreferrer">Mariela Janel Pangan</a>
+                </div>
+                <div class="flex items-center gap-4 text-lg text-custom-dark-green">
+                <span>Messenger: Mariela Janel Pangan </span> 
+                </div>
+                <div class="flex items-center gap-4 text-lg text-custom-dark-green">
+                <span>WhatsApp:</span><a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">+639205837430</a>
+                </div>
+                <div class="flex items-center gap-4 text-lg text-custom-dark-green">
+                 <span>Telegram:</span> <a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">Maxine Archer</a>
+                </div>
+                <div class="flex items-center gap-4 text-lg text-custom-dark-green">
+                <span>Gmail:</span> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">maja.pangan@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-4 text-lg text-custom-dark-green">
+                 <span>Phone No: +639205837430</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white/20 backdrop-blur-md py-4 text-center text-gray-600 rounded-t-lg shadow-md">
+        <p>&copy; 2025 MJ's Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
